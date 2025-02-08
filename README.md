@@ -79,12 +79,13 @@ We compare how well the models align using **heatmaps** that illustrate model ag
 Example of Confusion Matrix for **BERT vs OpenAI**:
 ```python
 plt.figure(figsize=(8, 6))
-sns.heatmap(conf_matrix, annot=True, fmt='d', cmap="coolwarm")
+sns.heatmap(conf_matrix, annot=True, fmt='d', cmap="Blues", linewidths=0.5, linecolor='gray')
 plt.title("Confusion Matrix: BERT vs OpenAI Sentiments")
 plt.xlabel("Sentiment OpenAI")
 plt.ylabel("Sentiment BERT")
 plt.show()
 ```
+![Confusion Matrix](bertvsopenai.png)
 
 ---
 
